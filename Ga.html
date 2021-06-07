@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/12ec2b87ad.js" crossorigin="anonymous"></script>
+
+
+
+
+
+
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+
+
+
+
+
+  <title>TG_Gallry</title>
+</head>
+<body>
+  
+  <section>
+    <header>
+    <a href="index.html" class="logo">TAEGYUN</a>
+
+    <div class="findmenu" onclick="findmenu();"></div>
+
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Ga.html">Gallery</a></li>
+      
+    </ul>
+  </header>
+
+
+
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+  
+  
+  
+  <div class="ccntainer">
+    <h2>click box</h2>
+    
+    
+    <ul class="filter-menu">
+      
+      
+      <li data-target="all">ALL</li>
+      <li data-target="Food">Food</li>
+      <li data-target="De">Dessert</li>
+      <li data-target="TG">TG</li>
+      <li data-target="ML">Military life</li>
+    </ul>
+    
+    
+    <ul class="filter-item">
+      <li data-item="TG"><img src="./Img/1.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/2.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/3.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/4.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/17.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/18.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/19.jpg" alt=""></li>
+      <li data-item="TG"><img src="./Img/20.jpg" alt=""></li>
+
+      <li data-item="Food"><img src="./Img/5.jpg" alt=""></li>
+      <li data-item="Food"><img src="./Img/6.jpg" alt=""></li>
+      <li data-item="Food"><img src="./Img/7.jpg" alt=""></li>
+
+      <li data-item="De"><img src="./Img/12.jpg" alt=""></li>
+      <li data-item="De"><img src="./Img/9.jpg" alt=""></li>
+      <li data-item="De"><img src="./Img/10.jpg" alt=""></li>
+      <li data-item="De"><img src="./Img/11.jpg" alt=""></li>
+
+      <li data-item="ML"><img src="./Img/13.jpg" alt=""></li>
+      <li data-item="ML"><img src="./Img/16.jpg" alt=""></li>
+      <li data-item="ML"><img src="./Img/14.jpg" alt=""></li>
+      <li data-item="ML"><img src="./Img/15.jpg" alt=""></li>
+      <li data-item="ML"><img src="./Img/21.jpg" alt=""></li>
+      
+      
+    
+    
+    </ul>
+
+    
+  
+  </section>
+  
+  <script type="text/javascript">
+  function findmenu(){
+    const findmenu = document.querySelector('.findmenu');
+    const navigation = document.querySelector('.navigation');
+    findmenu.classList.toggle('active');
+    navigation.classList.toggle('active');
+    
+  }
+  
+  </script>
+  
+
+
+</div>
+
+
+
+
+
+</section>
+
+<script src="maain.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/12ec2b87ad.js" crossorigin="anonymous"></script>
+
+
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Yeon+Sung&display=swap" rel="stylesheet">
+
+
+
+
+  <title>TG_Portfolio</title>
+</head>
+<body>
+
+  <section>
+    <header>
+    <a href="index.html" class="logo">TAEGYUN</a>
+
+    <div class="findmenu" onclick="findmenu();"></div>
+
+    <ul class="navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Pr.html">Portfolio</a></li>
+      
+    </ul>
+  </header>
+
+
+
+  <section class="banner"></section>
+  <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="clock">
+  <div class="display"></div>
+</div>
+
+<script>
+  setInterval(function(){
+
+    const clock = document.querySelector(".display");
+  let time = new Date();
+  let sec = time.getSeconds();
+  let min = time.getMinutes();
+  let hr = time.getHours();
+  let day = 'PM';
+  if(hr < 12){
+    day = 'AM';
+    hr = hr -12;
+  }
+  if(hr == 0){
+    hr = 12;
+  }
+  if(sec < 10){
+    sec = '0' + sec;
+  }
+  if(min < 10){
+    min = '0' + min;
+  }
+  if(hr < 10){
+    hr = '0' + hr;
+  }
+  clock.textContent = hr + ':' + min + ':' + sec + " " + day;
+
+  });
+  
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="timeline">
+    <ul>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">March, 2006 ~ 2012</h1>
+          <h2>Elementary school student</h2>
+          <p>제 8회 인천 후정 초등학교 졸업</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">March, 2012 ~ 2015</h1>
+          <h2>Middle school student</h2>
+          <p>제 21회 부일중학교 졸업 </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">March, 2015 ~ 2018</h1>
+          <h2>High school student</h2>
+          <p>제 34대 학생회 역임<br>제 12회 안남고등학교 졸업 </p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">March, 2018 ~ February, 2019</h1>
+          <h2>A university student</h2>
+          <p>중부대학교 입학<br>소프트웨어공학부 배정</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">February, 2019 ~ September, 2020</h1>
+          <h2>A military man</h2>
+          <p>7사단 신병교육대 입소<br>교육사령부-군견훈련소 배치<br>군견병 병장 만기전역</p>
+        </div>
+      </li>
+
+      <li>
+        <div class="timeline-content">
+          <h1 class="date">March, 2021 ~</h1>
+          <h2>A university student</h2>
+          <p>정보보호학과 복학</p>
+        </div>
+      </li>
+     
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  function findmenu(){
+    const findmenu = document.querySelector('.findmenu');
+    const navigation = document.querySelector('.navigation');
+    findmenu.classList.toggle('active');
+    navigation.classList.toggle('active');
+
+  }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<footer class="footer">
+  <div class="cantainer">
+    <div class="row">
+
+      <div class="footer-col">
+        <h4>제작</h4>
+        <ul>
+          <li><a href="#">유태균</a></li>
+          <li><a href="#">91812737</a></li>
+          <li><a href="#">정보보학과</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>문의사항</h4>
+        <ul>
+          <li><a href="#">공지사항</a></li>
+          <li><a href="#">안내사항</a></li>
+          <li><a href="#">최근소식</a></li>
+          <li><a href="#">오시는길</a></li>
+        </ul>
+      </div>
+
+
+      <div class="footer-col">
+        <h4>추가문의</h4>
+        <ul>
+          <li><a href="#">Maill : xorbsdl@jmail.ac.kr</a></li>
+          <li><a href="#">Call : 099-0312</a></li>
+        </ul>
+      </div>
+
+
+      
+
+
+      <div class="footer-col">
+        <h4>follow me</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/login/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/tae_momin/"><i class="fab fa-instagram"></i></a>
+          <a href="https://open.kakao.com/o/sVvEDo8c"><i class="fab fa-kickstarter-k"></i></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </div>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
